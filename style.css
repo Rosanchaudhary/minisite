@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  direction: rtl;
+}
+.hero-container {
+  display: flex;
+
+  flex-direction: column;
+}
+.tab-bar {
+  height: 60px;
+  width: 75vw;
+  background-color: #182c4c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.tab-container {
+  width: 234px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.tab-text {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.tab-underline {
+  height: 6px;
+  width: 100%;
+  background-color: white;
+}
+
+.hero-title-image {
+  width: 530px;
+  align-self: center;
+}
+.tab-page {
+  width: 60vw;
+  background: url("./assets/heroBackground.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.normal-text {
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: grey;
+}
+
+.shadow-container {
+  padding: 40px 0;
+  height: max-content;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.carasul-container {
+  height: 170px;
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carasul-items {
+  height: 100%;
+  width: 25%;
+}
+
+.form-conainer {
+  width: 25vw;
+  height: 1026px;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-input {
+  height: 52px;
+  width: 303px;
+  border: 1px solid #8f8f8f;
+
+  font-size: 20px;
+  font-weight: 300px;
+  color: #8f8f8f;
+  margin-top: 20px;
+}
+.form-button {
+  height: 52px;
+  width: 303px;
+  background-color: #182c4c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-button h1 {
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.terms-container {
+  height: 102px;
+  width: 303px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-items: center;
+  gap: 20px;
+}
+.terms-container h1 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8f8f8f;
+}
+.terms-container input {
+  height: 100px;
+  width: 100px;
+}
+.terms-and-condition {
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  color: #8f8f8f;
+  margin-bottom: 35px;
+}
+
+.tab {
+  height: 60px;
+  width: 100%;
+  background-color: #182c4c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.tablinks {
+  width: 234px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.tabcontent {
+  display: none;
+  width: 75vw;
+}
+.explorer-st {
+  height: 100vh;
+  height: fit-content;
+  background: url("./assets/explorerst.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.explorer {
+  background: url("./assets/heroBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Testing css for carusel  */
+.carasul-box {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  /*  box-shadow is from materialize css's website */
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.container img {
+  width: 100%;
+}
+
+button {
+  height: 100%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button .arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
+}
+
+#right-btn .arrow {
+  transform: rotate(135deg);
+}
+
+#left-btn .arrow {
+  transform: rotate(-45deg);
+}
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.box-column {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}
