@@ -14,84 +14,138 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="top-bar">
+      <img src="./assets/top_text.png" alt="top text" />
+      <img src="./assets/ford_logo.png" alt="Logo" />
+    </div>
     <div class="box-row">
       <div class="box-column">
         <!-- Hero Section -->
         <div class="hero-container">
           <div class="tab-bar">
-            <div class="tablinks active" onclick="openTab(event, 'tab1')">
-              <h1 class="tab-text">EXPLORER</h1>
-              <div class="tab-underline active"></div>
+            <div
+              class="tablinks active"
+              onclick="openTab(event, 'tab1','taba','tabx')"
+            >
+              <h1 class="tab-text" id="tabx">EXPLORER</h1>
+              <div class="tab-underline active" id="taba"></div>
             </div>
-            <div class="tablinks" onclick="openTab(event, 'tab2')">
-              <h1 class="tab-text">EXPLORER ST</h1>
-              <div class="tab-underline"></div>
+            <div
+              class="tablinks"
+              onclick="openTab(event, 'tab2','tabb','taby')"
+            >
+              <h1 class="tab-text" id="taby">EXPLORER ST</h1>
+              <div class="tab-underline" id="tabb"></div>
             </div>
           </div>
 
           <div id="tab1" class="tabcontent active">
-            <div class="explorer">
-              <div style="height: 115px"></div>
+            <div class="exp-box">
               <img
-                src="./assets/ford_explorer.png"
-                alt="ford EXPLORER"
-                class="hero-title-image"
+                src="./assets/heroBackground.png"
+                alt="explorer"
+                class="back-image"
               />
-              <div style="height: 300px"></div>
-              <div class="shadow-container">
-                <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
-                <h1 class="normal-text">
-                  הפרימיום SUV היוקרתי מנוע טורבו-בנזין 2.3L, צריכת דלק משופרת,
-                  ט
-                </h1>
-                <h1 class="header-text">החל מ-349,900 ₪*</h1>
+              <div class="exp-content">
+                <img
+                  src="./assets/ford_explorer.png"
+                  alt="ford EXPLORER"
+                  class="hero-title-image"
+                />
+                <div style="height: 150px"></div>
+                <div class="shadow-container">
+                  <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
+                  <h1 class="normal-text">
+                    הפרימיום SUV היוקרתי מנוע טורבו-בנזין 2.3L, צריכת דלק
+                    משופרת, ט
+                  </h1>
+                  <h1 class="header-text">החל מ-349,900 ₪*</h1>
+                </div>
               </div>
+            </div>
+            <div class="carasul-container">
+              <img
+                src="./assets/fordfour.png"
+                alt="ford four"
+                class="carasul-items"
+              />
+              <img
+                src="./assets/fordthree.png"
+                alt="ford three"
+                class="carasul-items"
+              />
+              <img
+                src="./assets/fordtwo.png"
+                alt="ford twfordt"
+                class="carasul-items"
+              />
+              <img
+                src="./assets/fordone.png"
+                alt="ford one"
+                class="carasul-items"
+              />
             </div>
           </div>
           <div id="tab2" class="tabcontent">
-            <div class="explorer-st">
-              <div style="height: 115px"></div>
+            <div class="exp-box">
               <img
-                src="./assets/ford_explorer.png"
-                alt="ford EXPLORER"
-                class="hero-title-image"
+                src="./assets/explorerst.png"
+                alt="explorer"
+                class="back-image"
               />
-              <div style="height: 300px"></div>
-              <div class="shadow-container">
-                <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
-                <h1 class="normal-text">
-                  הפרימיום SUV היוקרתי מנוע טורבו-בנזין 2.3L, צריכת דלק משופרת,
-                  ט
-                </h1>
-                <h1 class="header-text">החל מ-349,900 ₪*</h1>
+              <div class="exp-content">
+                <img
+                  src="./assets/ford_explorer_st.png"
+                  alt="ford EXPLORER"
+                  class="hero-title-image"
+                />
+                <div style="height: 150px"></div>
+                <div class="shadow-container">
+                  <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
+                  <h1 class="normal-text">
+                    הפרימיום SUV היוקרתי מנוע טורבו-בנזין 2.3L, צריכת דלק
+                    משופרת, ט
+                  </h1>
+                  <h1 class="header-text">החל מ-349,900 ₪*</h1>
+                </div>
               </div>
+            </div>
+            <div class="carasul-container">
+              <img
+                src="./assets/st_one.png"
+                alt="ford four"
+                class="carasul-items"
+              />
+              <img
+                src="./assets/st_two.png"
+                alt="ford three"
+                class="carasul-items"
+              />
+              <img
+                src="./assets/st_three.png"
+                alt="ford twfordt"
+                class="carasul-items"
+              />
+              <img
+                src="./assets/st_four.png"
+                alt="ford one"
+                class="carasul-items"
+              />
             </div>
           </div>
         </div>
+        <div style="height: 10px"></div>
         <!-- Carasul -->
-        <div class="carasul-container">
-          <img
-            src="./assets/fordfour.png"
-            alt="ford four"
-            class="carasul-items"
-          />
-          <img
-            src="./assets/fordthree.png"
-            alt="ford three"
-            class="carasul-items"
-          />
-          <img
-            src="./assets/fordtwo.png"
-            alt="ford twfordt"
-            class="carasul-items"
-          />
-          <img
-            src="./assets/fordone.png"
-            alt="ford one"
-            class="carasul-items"
-          />
+
+        <div class="carasul-box">
+          <div class="container">
+            <button id="left-btn"><i class="arrow"></i></button>
+            <img id="carousel" src="" alt="" />
+            <button id="right-btn"><i class="arrow"></i></button>
+          </div>
         </div>
       </div>
+      <div style="height: 10px"></div>
       <!-- Contact Form  -->
       <div class="form-conainer">
         <div class="form-button">
@@ -120,16 +174,7 @@
         <img src="./assets/ford_logo_two.png" alt="Ford" />
       </div>
     </div>
-
-    <div style="height: 300px"></div>
-    <div class="carasul-box">
-      <div class="container">
-        <button id="left-btn"><i class="arrow"></i></button>
-        <img id="carousel" src="" alt="" />
-        <button id="right-btn"><i class="arrow"></i></button>
-      </div>
-    </div>
-    <div style="height: 300px"></div>
+    <img src="./assets/footer_image.png" alt="footer" />
     <script src="./index.js"></script>
   </body>
 </html>

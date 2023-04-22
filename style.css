@@ -3,9 +3,14 @@
   font-family: "Heebo", sans-serif;
   direction: rtl;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+.top-bar{
+  display: none;
+}
 .hero-container {
   display: flex;
-
   flex-direction: column;
 }
 .tab-bar {
@@ -32,6 +37,7 @@
   font-weight: 500;
 }
 .tab-underline {
+  display: none;
   height: 6px;
   width: 100%;
   background-color: white;
@@ -39,16 +45,6 @@
 
 .hero-title-image {
   width: 530px;
-  align-self: center;
-}
-.tab-page {
-  width: 60vw;
-  background: url("./assets/heroBackground.png");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
 }
 
 .header-text {
@@ -70,6 +66,7 @@
   padding: 40px 0;
   height: max-content;
   width: 100%;
+
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 .carasul-container {
@@ -86,9 +83,9 @@
 }
 
 .form-conainer {
+  padding: 50px 0;
   width: 25vw;
-  height: 1026px;
-
+  height: fit-content;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -97,9 +94,8 @@
 }
 .form-input {
   height: 52px;
-  width: 303px;
+  width: 85%;
   border: 1px solid #8f8f8f;
-
   font-size: 20px;
   font-weight: 300px;
   color: #8f8f8f;
@@ -107,7 +103,7 @@
 }
 .form-button {
   height: 52px;
-  width: 303px;
+  width: 85%;
   background-color: #182c4c;
   display: flex;
   flex-direction: column;
@@ -123,7 +119,7 @@
 }
 .terms-container {
   height: 102px;
-  width: 303px;
+  width: 85%;
   display: flex;
   flex-direction: row-reverse;
 
@@ -148,15 +144,6 @@
   margin-bottom: 35px;
 }
 
-.tab {
-  height: 60px;
-  width: 100%;
-  background-color: #182c4c;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 .tablinks {
   width: 234px;
   height: 100%;
@@ -169,52 +156,44 @@
 .tabcontent {
   display: none;
   width: 75vw;
-}
-.explorer-st {
-  height: 100vh;
   height: fit-content;
-  background: url("./assets/explorerst.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
 }
-.explorer {
-  background: url("./assets/heroBackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+.exp-box {
+  position: relative;
+  width: 75vw;
+  height: 90vh;
 }
-
-/* Testing css for carusel  */
-.carasul-box {
-  width: 100vw;
-  height: fit-content;
+.exp-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
 }
-.container {
-  width: 700px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  /*  box-shadow is from materialize css's website */
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-}
-
-.container img {
+.back-image {
+  height: 100%;
   width: 100%;
 }
 
+.carasul-box {
+  display: none;
+}
+.container {
+  width: 100%;
+  height: 368px;
+  display: flex;
+  justify-content: center;
+}
+
 button {
+  background-color: #fff;
   height: 100%;
   border: none;
   outline: none;
-  background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   padding: 1em;
   display: flex;
@@ -223,7 +202,7 @@ button {
 }
 
 button .arrow {
-  border: solid #fff;
+  border: solid #000;
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 10px;
@@ -244,8 +223,79 @@ button .arrow {
   flex-direction: row;
   width: 100vw;
 }
+
 .box-column {
   display: flex;
   flex-direction: column;
   width: 75vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .box-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .box-column {
+    width: 100vw;
+  }
+  .tabcontent {
+    display: none;
+    width: 100vw;
+  }
+  .tab-bar {
+    width: 100vw;
+  }
+  .carasul-container {
+    display: none;
+    width: 100vw;
+  }
+
+  .form-conainer {
+    width: 100vw;
+    height: fit-content;
+  }
+  .form-input {
+    width: 85%;
+  }
+  .form-button {
+    width: 85%;
+  }
+  .form-button h1 {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  .terms-container {
+    width: 90%;
+  }
+
+  .terms-container input {
+    height: 100px;
+    width: 100px;
+  }
+
+  .carasul-box {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .exp-box {
+    width: 100vw;
+  }
 }
