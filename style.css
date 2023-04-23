@@ -6,6 +6,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 .top-bar {
   display: none;
 }
@@ -22,16 +23,8 @@
   justify-content: center;
   align-items: center;
 }
-.tab-container {
-  width: 234px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
-}
 .tab-text {
+  padding-top: 10px;
   color: white;
   font-size: 24px;
   font-weight: 500;
@@ -151,8 +144,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
+  justify-content: space-between;
 }
 .tabcontent {
   display: none;
@@ -183,52 +175,6 @@
   width: 100%;
 }
 
-.carasul-box {
-  display: none;
-  width: 100vw;
-  height: 368px;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.container img {
-  width: 100%;
-}
-
-button {
-  background-color: transparent;
-  height: 100%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-button .arrow {
-  border: solid #000;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 10px;
-  transition: transform 0.3s ease-out;
-  outline: none;
-}
-
-#right-btn .arrow {
-  transform: rotate(135deg);
-}
-
-#left-btn .arrow {
-  transform: rotate(-45deg);
-}
-
 .box-row {
   display: flex;
   flex-direction: row;
@@ -247,7 +193,46 @@ button .arrow {
   display: none;
 }
 
+/* Carasul Items classes  */
+.carasul-box {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  .carasul-box {
+    width: 100vw;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container img {
+    width: 100%;
+  }
+  .test-container {
+    height: 100%;
+    width: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carasul-container {
+    display: none;
+    width: 100vw;
+  }
   .horizontal-line {
     display: block;
     width: 90%;
@@ -292,12 +277,9 @@ button .arrow {
   .tab-bar {
     width: 100vw;
   }
-  .carasul-container {
-    display: none;
-    width: 100vw;
-  }
 
   .form-conainer {
+    padding: 10px 0;
     width: 100vw;
     height: fit-content;
   }
@@ -324,13 +306,6 @@ button .arrow {
     width: 100px;
   }
 
-  .carasul-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .exp-box {
     width: 100vw;
     height: fit-content;
@@ -348,6 +323,18 @@ button .arrow {
 }
 
 @media only screen and (max-width: 600px) {
+  .carasul-box {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container img {
+    width: 80%;
+  }
+
   .form-input {
     font-size: 18px;
     margin-top: 10px;
@@ -365,11 +352,5 @@ button .arrow {
   .terms-and-condition {
     font-size: 10px;
     text-align: center;
-  }
-  .carasul-box {
-    height: fit-content;
-  }
-  .container {
-    height: fit-content;
   }
 }
