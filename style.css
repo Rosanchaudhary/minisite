@@ -6,7 +6,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
-.top-bar{
+.top-bar {
   display: none;
 }
 .hero-container {
@@ -63,10 +63,10 @@
 }
 
 .shadow-container {
+  margin-top: 11vw;
   padding: 40px 0;
   height: max-content;
   width: 100%;
-
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 .carasul-container {
@@ -102,7 +102,8 @@
   margin-top: 20px;
 }
 .form-button {
-  height: 52px;
+  height: fit-content;
+  padding: 10px 0;
   width: 85%;
   background-color: #182c4c;
   display: flex;
@@ -118,11 +119,10 @@
   color: #ffffff;
 }
 .terms-container {
-  height: 102px;
+  height: fit-content;
   width: 85%;
   display: flex;
   flex-direction: row-reverse;
-
   align-items: center;
   gap: 20px;
 }
@@ -141,6 +141,7 @@
   font-style: normal;
   text-align: left;
   color: #8f8f8f;
+  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -174,6 +175,9 @@
   align-items: center;
   justify-content: flex-end;
 }
+.exp-content img {
+  width: 55%;
+}
 .back-image {
   height: 100%;
   width: 100%;
@@ -181,16 +185,23 @@
 
 .carasul-box {
   display: none;
+  width: 100vw;
+  height: 368px;
 }
 .container {
   width: 100%;
-  height: 368px;
+  height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+.container img {
+  width: 100%;
 }
 
 button {
-  background-color: #fff;
+  background-color: transparent;
   height: 100%;
   border: none;
   outline: none;
@@ -229,15 +240,41 @@ button .arrow {
   flex-direction: column;
   width: 75vw;
 }
+.footer {
+  width: 100vw;
+}
+.horizontal-line {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
-  .top-bar{
+  .horizontal-line {
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: grey;
+    margin: 10px 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer img {
+    width: 90vw;
+  }
+  .form-button h1 {
+    font-size: 18px;
+  }
+  .top-bar {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0;
   }
+
   .box-row {
     display: flex;
     flex-direction: column;
@@ -278,7 +315,8 @@ button .arrow {
     color: #ffffff;
   }
   .terms-container {
-    width: 90%;
+    width: 85%;
+    padding: 6px 0;
   }
 
   .terms-container input {
@@ -287,8 +325,6 @@ button .arrow {
   }
 
   .carasul-box {
-    width: 100vw;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,5 +333,43 @@ button .arrow {
 
   .exp-box {
     width: 100vw;
+    height: fit-content;
+  }
+
+  .shadow-container {
+    padding: 2px 0;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+  .normal-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-input {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .terms-container {
+    gap: 10px;
+  }
+  .terms-container h1 {
+    font-size: 10px;
+  }
+  .terms-container input {
+    height: 40px;
+    width: 40px;
+  }
+  .terms-and-condition {
+    font-size: 10px;
+    text-align: center;
+  }
+  .carasul-box {
+    height: fit-content;
+  }
+  .container {
+    height: fit-content;
   }
 }

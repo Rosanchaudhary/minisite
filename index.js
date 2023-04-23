@@ -52,6 +52,7 @@ function openTab(evt, tabName, thisTab, tabText) {
     document.getElementById(tabText).style.color = "red";
   } else {
     img.src = pictures[0];
+    document.getElementById("taby").style.color = "white";
   }
   // tabTextDiv = document.getElementsByClassName("tab-text");
   // for (i = 0; i < tabTextDiv.length; i++) {
