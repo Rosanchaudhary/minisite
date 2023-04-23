@@ -6,17 +6,25 @@ const leftBtn = document.getElementById("left-btn");
 
 // Images are from unsplash
 let pictures = [
-  "./assets/fordone.png",
-  "./assets/fordtwo.png",
-  "./assets/fordthree.png",
-  "./assets/fordfour.png",
+  "./images/e_one.png",
+  "./images/e_two.png",
+  "./images/e_three.png",
+  "./images/e_four.png",
+  // "./assets/fordone.png",
+  // "./assets/fordtwo.png",
+  // "./assets/fordthree.png",
+  // "./assets/fordfour.png",
 ];
 
 let images = [
-  "./assets/est_one.png",
-  "./assets/est_two.png",
-  "./assets/est_three.png",
-  "./assets/est_four.png",
+  "./images/st_one.png",
+  "./images/st_two.png",
+  "./images/st_three.png",
+  "./images/st_four.png",
+  // "./assets/est_one.png",
+  // "./assets/est_two.png",
+  // "./assets/est_three.png",
+  // "./assets/est_four.png",
 ];
 var listOfImages = pictures;
 img.src = pictures[0];
@@ -53,10 +61,12 @@ function openTab(evt, tabName, thisTab, tabText) {
     listOfImages = images;
     document.getElementById(thisTab).style.backgroundColor = "red";
     document.getElementById(tabText).style.color = "red";
+    document.getElementById("form-button-title").innerHTML = "לחוות עוצמה";
   } else {
     img.src = pictures[0];
     listOfImages = pictures;
     document.getElementById("taby").style.color = "white";
+    document.getElementById("form-button-title").innerHTML = "זה לחוות יוקרה";
   }
 
   tabcontent = document.getElementsByClassName("tabcontent");

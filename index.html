@@ -24,18 +24,18 @@
         <div class="hero-container">
           <div class="tab-bar">
             <div
-              class="tablinks active"
-              onclick="openTab(event, 'tab1','taba','tabx')"
-            >
-              <h1 class="tab-text" id="tabx">EXPLORER</h1>
-              <div class="tab-underline active" id="taba"></div>
-            </div>
-            <div
               class="tablinks"
               onclick="openTab(event, 'tab2','tabb','taby')"
             >
               <h1 class="tab-text" id="taby">EXPLORER ST</h1>
               <div class="tab-underline" id="tabb"></div>
+            </div>
+            <div
+              class="tablinks active"
+              onclick="openTab(event, 'tab1','taba','tabx')"
+            >
+              <h1 class="tab-text" id="tabx">EXPLORER</h1>
+              <div class="tab-underline active" id="taba"></div>
             </div>
           </div>
 
@@ -46,7 +46,7 @@
                 alt="explorer"
                 class="back-image"
               />
-              <div class="exp-content">
+              <div class="exp-content"> 
                 <img
                   src="./assets/ford_explorer.png"
                   alt="ford EXPLORER"
@@ -56,8 +56,10 @@
                 <div class="shadow-container">
                   <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
                   <h1 class="normal-text">
-                    הפרימיום SUV היוקרתי מנוע טורבו-בנזין 2.3L, צריכת דלק
-                    משופרת, ט
+                    מנוע טורבו-בנזין 2.3L, צריכת דלק משופרת, טכנולוגיית שלדה עם
+                    פלטפורמה גדולה, קלה וחזקה,<br />
+                    מערכות בטיחות מתקדמות ותא נוסעים נוח ומרווח ומאובזר יותר מאי
+                    פעם
                   </h1>
                   <h1 class="header-text">החל מ-349,900 ₪*</h1>
                 </div>
@@ -65,22 +67,22 @@
             </div>
             <div class="carasul-container">
               <img
-                src="./assets/fordfour.png"
+                src="./images/e_four.png"
                 alt="ford four"
                 class="carasul-items"
               />
               <img
-                src="./assets/fordthree.png"
+                src="./images/e_three.png"
                 alt="ford three"
                 class="carasul-items"
               />
               <img
-                src="./assets/fordtwo.png"
+                src="./images/e_two.png"
                 alt="ford twfordt"
                 class="carasul-items"
               />
               <img
-                src="./assets/fordone.png"
+                src="./images/e_one.png"
                 alt="ford one"
                 class="carasul-items"
               />
@@ -100,33 +102,36 @@
                   class="hero-title-image"
                 />
                 <div class="shadow-container">
-                  <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
-                  <h1 class="normal-text">
-                    הפרימיום SUV היוקרתי מנוע טורבו-בנזין 2.3L, צריכת דלק
-                    משופרת, ט
+                  <h1 class="header-text">
+                    הפרמיום SUV החדש בגרסת הקצה העוצמתית
                   </h1>
-                  <h1 class="header-text">החל מ-349,900 ₪*</h1>
+                  <h1 class="normal-text">
+                    מנוע 6 TWIN TURBO V בנפח L3.0 המפיק 400 כ"ס.<br />
+                    חבילת עיצוב ST ייחודית מבפנים ומבחוץ ורמת אבזור גבוהה מאי
+                    פעם.
+                  </h1>
+                  <h1 class="header-text">מחכה לכם באולמות התצוגה</h1>
                 </div>
               </div>
             </div>
             <div class="carasul-container">
               <img
-                src="./assets/st_one.png"
+                src="./images/st_one.png"
                 alt="ford four"
                 class="carasul-items"
               />
               <img
-                src="./assets/st_two.png"
+                src="./images/st_two.png"
                 alt="ford three"
                 class="carasul-items"
               />
               <img
-                src="./assets/st_three.png"
+                src="./images/st_three.png"
                 alt="ford twfordt"
                 class="carasul-items"
               />
               <img
-                src="./assets/st_four.png"
+                src="./images/st_four.png"
                 alt="ford one"
                 class="carasul-items"
               />
@@ -138,16 +143,15 @@
 
         <div class="carasul-box">
           <div class="container">
-            <!-- <button id="left-btn"><i class="arrow"></i></button> -->
             <div id="left-btn" class="test-container">
-              <div style="width: 26px">
+              <div style="width: 16px">
                 <img src="./assets/arrow_right.png" alt="" />
               </div>
             </div>
 
             <img id="carousel" src="" alt="" />
             <div id="right-btn" class="test-container">
-              <div style="width: 26px">
+              <div style="width: 16px">
                 <img src="./assets/arrow_left.png" alt="" />
               </div>
             </div>
@@ -158,14 +162,14 @@
       <!-- Contact Form  -->
       <div class="form-conainer">
         <div class="form-button">
-          <h1>מוכנים לחוות יוקרה?</h1>
+          <h1 id="form-button-title">זה לחוות יוקרה</h1> 
         </div>
         <input type="text" placeholder="שם פרטי" class="form-input" />
         <input type="text" placeholder="שם משפחה" class="form-input" />
         <input type="text" placeholder="טלפון" class="form-input" />
         <input type="text" placeholder="מייל" class="form-input" />
-        <select name="" id="" class="form-input">
-          <option value="בחר אולם תצוגה" >בחר אולם תצוגה</option>
+        <select name="" id="">
+          <option value="בחר אולם תצוגה">בחר אולם תצוגה</option>
           <option value="saab">Saab</option>
           <option value="mercedes">Mercedes</option>
           <option value="audi">Audi</option>
