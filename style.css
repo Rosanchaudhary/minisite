@@ -97,7 +97,7 @@
 .form-button {
   height: fit-content;
   padding: 10px 0;
-  width: 85%;
+  width: 87%;
   background-color: #182c4c;
   display: flex;
   flex-direction: column;
@@ -222,7 +222,6 @@
   .test-container {
     height: 100%;
     width: 90px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,19 +282,7 @@
     width: 100vw;
     height: fit-content;
   }
-  .form-input {
-    width: 85%;
-  }
-  .form-button {
-    width: 85%;
-  }
-  .form-button h1 {
-    font-size: 25px;
-    font-weight: 500;
-    font-style: normal;
-    text-align: center;
-    color: #ffffff;
-  }
+
   .terms-container {
     width: 85%;
     padding: 6px 0;
