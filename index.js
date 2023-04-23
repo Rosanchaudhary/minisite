@@ -26,6 +26,7 @@ let images = [
   // "./assets/est_three.png",
   // "./assets/est_four.png",
 ];
+
 var listOfImages = pictures;
 img.src = pictures[0];
 let position = 0;
@@ -56,8 +57,9 @@ leftBtn.addEventListener("click", moveLeft);
 function openTab(evt, tabName, thisTab, tabText) {
   var i, tabcontent, tablinks, tabUnderline;
 
+
   if (tabName != "tab1") {
-    img.src = images[0];
+    img.src = images[0]; 
     listOfImages = images;
     document.getElementById(thisTab).style.backgroundColor = "red";
     document.getElementById(tabText).style.color = "red";
