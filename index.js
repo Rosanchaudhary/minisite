@@ -2,18 +2,12 @@ const img = document.getElementById("carousel");
 const rightBtn = document.getElementById("right-btn");
 const leftBtn = document.getElementById("left-btn");
 
-
-
 // Images are from unsplash
 let pictures = [
   "./images/e_one.png",
   "./images/e_two.png",
   "./images/e_three.png",
   "./images/e_four.png",
-  // "./assets/fordone.png",
-  // "./assets/fordtwo.png",
-  // "./assets/fordthree.png",
-  // "./assets/fordfour.png",
 ];
 
 let images = [
@@ -21,10 +15,6 @@ let images = [
   "./images/st_two.png",
   "./images/st_three.png",
   "./images/st_four.png",
-  // "./assets/est_one.png",
-  // "./assets/est_two.png",
-  // "./assets/est_three.png",
-  // "./assets/est_four.png",
 ];
 
 var listOfImages = pictures;
@@ -57,9 +47,8 @@ leftBtn.addEventListener("click", moveLeft);
 function openTab(evt, tabName, thisTab, tabText) {
   var i, tabcontent, tablinks, tabUnderline;
 
-
   if (tabName != "tab1") {
-    img.src = images[0]; 
+    img.src = images[0];
     listOfImages = images;
     document.getElementById(thisTab).style.backgroundColor = "red";
     document.getElementById(tabText).style.color = "red";
