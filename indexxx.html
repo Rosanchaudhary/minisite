@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
   <body>
     <div class="top-bar">
@@ -18,9 +19,9 @@
       <img src="./assets/ford_logo.png" alt="Logo" style="width: 40%" />
     </div>
     <div class="box-row">
-      <div class="box-col">
-        <div>
-          <!-- Tab Bar Menu -->
+      <div class="box-column">
+        <!-- Hero Section -->
+        <div class="hero-container">
           <div class="tab-bar">
             <div
               class="tablinks"
@@ -38,15 +39,20 @@
             </div>
           </div>
 
-          <!-- Tab Pages -->
           <div id="tab1" class="tabcontent active">
             <div class="exp-box">
               <img
-                src="./images/exp_bg.png"
+                src="./images/e.png"
                 alt="explorer"
                 class="back-image"
               />
-              <div class="exp-content">
+              <div class="exp-content"> 
+                <img
+                  src="./assets/ford_explorer.png"
+                  alt="ford EXPLORER"
+                  class="hero-title-image"
+                />
+
                 <div class="shadow-container">
                   <h1 class="header-text">הפרימיום SUV היוקרתי</h1>
                   <h1 class="normal-text">
@@ -85,11 +91,16 @@
           <div id="tab2" class="tabcontent">
             <div class="exp-box">
               <img
-                src="./images/exp_st_bg.png"
+                src="./images/e_st.png"
                 alt="explorer"
                 class="back-image"
               />
               <div class="exp-content">
+                <img
+                  src="./assets/ford_explorer_st.png"
+                  alt="ford EXPLORER"
+                  class="hero-title-image"
+                />
                 <div class="shadow-container">
                   <h1 class="header-text">
                     הפרמיום SUV החדש בגרסת הקצה העוצמתית
@@ -127,6 +138,7 @@
             </div>
           </div>
         </div>
+        <div style="height: 10px"></div>
         <!-- Carasul -->
 
         <div class="carasul-box">
@@ -146,10 +158,11 @@
           </div>
         </div>
       </div>
+
       <!-- Contact Form  -->
       <div class="form-conainer">
         <div class="form-button">
-          <h1 id="form-button-title">זה לחוות יוקרה</h1>
+          <h1 id="form-button-title">זה לחוות יוקרה</h1> 
         </div>
         <input type="text" placeholder="שם פרטי" class="form-input" />
         <input type="text" placeholder="שם משפחה" class="form-input" />
@@ -172,14 +185,15 @@
         <div class="form-button">
           <h1>לתיאום נסיעת הדגמה ></h1>
         </div>
+        <div style="height: 10px"></div>
         <h1 class="terms-and-condition">
           המחיר לדגם LIMITIED RWD כולל אגרת הרישוי בסך 5,033 ₪ והינו 354,933 ₪.
         </h1>
         <img src="./assets/ford_logo_two.png" alt="Ford" style="width: 70%" />
       </div>
     </div>
-    <div class="horizontal-line"></div>
     <div class="footer">
+      <div class="horizontal-line"></div>
       <img src="./assets/footer_image.png" alt="footer" />
     </div>
     <script src="./index.js"></script>
