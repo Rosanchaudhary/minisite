@@ -6,6 +6,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 .top-bar {
   display: none;
 }
@@ -105,7 +106,6 @@
   padding: 6px 0;
   height: fit-content;
   width: 100%;
-
 }
 
 .carasul-container {
@@ -113,12 +113,10 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-
 }
 .carasul-items {
   height: 100%;
   width: 25%;
-
 }
 
 .carasul-box {
@@ -140,8 +138,8 @@
   width: 85%;
   border: 1px solid #d4d5d4;
   font-size: 18px;
-  font-weight: 500px;
-  color: #d4d5d4;
+  font-weight: 300;
+  color: #8f8f8f;
   margin-top: 10px;
   padding: 0 20px;
 }
@@ -179,8 +177,8 @@
   width: 90%;
 }
 .terms-container input {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border: 1px solid #d4d5d4;
 }
 .terms-and-condition {
@@ -199,10 +197,13 @@ select {
   width: 85%;
   border: 1px solid #d4d5d4;
   font-size: 20px;
-  font-weight: 500px;
-  color: #8f8f8f;
+  font-weight: 200;
+  color:#75748a;
   margin-top: 10px;
   padding: 0 20px;
+}
+option:checked { 
+  font-weight: 300;
 }
 
 select:focus {
@@ -218,9 +219,11 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url("./assets/arrow_down.png");
+  background-image: url("./images/arrow_down.png");
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position: 10px;
+  font-weight: 200;
 }
 .footer {
   height: 5vh;
@@ -307,7 +310,6 @@ select {
 
   .shadow-container {
     padding-bottom: 5px;
-
   }
   .header-text {
     font-size: 20px;
@@ -367,5 +369,4 @@ select {
   .normal-text {
     font-size: 10px;
   }
-
 }
